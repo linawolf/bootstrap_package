@@ -2,5 +2,10 @@
 #### FRONTEND LOGIN ####
 ########################
 styles.content.loginform {
-    templateFile = EXT:bootstrap_package/Resources/Private/Templates/Felogin/FrontendLogin.html
+    view {
+        layoutRootPath = EXT:bootstrap_package/Resources/Private/Layouts/Felogin/
+        partialRootPath = EXT:bootstrap_package/Resources/Private/Partials/Felogin/
+        templateRootPath = EXT:bootstrap_package/Resources/Private/Templates/Felogin/
+    }
+    templateFile = EXT:bootstrap_package/Resources/Private/Templates/Felogin/Login/Login.html
 }
